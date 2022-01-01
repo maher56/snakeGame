@@ -12,7 +12,7 @@ let button = document.createElement("button");
 button.textContent = "ad";
 function main(currentTime) {
     if(snakeIntersection()) {
-        if(alert(button))
+        if(confirm("you Lost, do you want to Start Again?"))
             window.location.reload()
         return
     }
